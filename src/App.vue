@@ -6,18 +6,9 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="./assets/dora_soss.png"
           transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
+          width="300"
         />
       </div>
 
@@ -62,8 +53,11 @@
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item>
 
-          <v-list-group value="true" v-for="(item, i) in items" :key="i">
+          <v-list-group v-for="(item, i) in items" :key="i">
             <template v-slot:activator>
+              <v-list-item-icon>
+                    <v-icon>{{ item.icon }}</v-icon>
+                  </v-list-item-icon>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </template>
             <div v-for="(item2, i2) in item.child" :key="i2">
@@ -71,7 +65,6 @@
                 v-if="item2.child.length > 0"
                 no-action
                 sub-group
-                value="true"
               >
                 <template v-slot:activator>
                   <v-list-item-content>
@@ -93,7 +86,7 @@
               </v-list-group>
 
               <v-list-item-group v-else>
-                <v-list-item>
+                <v-list-item link :to="item2.to">
                   <v-list-item-icon>
                     <v-icon></v-icon>
                   </v-list-item-icon>
@@ -117,7 +110,7 @@
       </v-navigation-drawer>
     </v-card>
     <v-main>
-      <v-container>
+      <v-container @click.stop="mini=true">
         <v-row justify="center">
           <v-col cols="10">
             <router-view></router-view>
@@ -139,11 +132,11 @@ export default {
     items: [
       {
         title: "ข้อมูลพื้นฐาน",
-        icon: "mdi-home-city",
+        icon: "mdi-alert-circle-outline",
         to: "/",
         child: [
-          { title: "พลังงาน", to: "", child: [], icon: "mdi-home-city" },
-          { title: "มิตรภาพ", to: "", child: [], icon: "mdi-home-city" },
+          { title: "พลังงาน", to: "/stamina", child: [], icon: "mdi-home-city" },
+          { title: "ความสัมพันธ์", to: "/friendship", child: [], icon: "mdi-home-city" },
           { title: "การเก็บเกี่ยว", to: "", child: [], icon: "mdi-home-city" },
           { title: "สัตว์เลี้ยง", to: "", child: [], icon: "mdi-home-city" },
           {
@@ -174,7 +167,7 @@ export default {
       },
       {
         title: "กิจกรรม",
-        icon: "mdi-account",
+        icon: "mdi-run",
         to: "/activities",
         child: [
           {
@@ -211,7 +204,7 @@ export default {
       },
       {
         title: "บทสรุป",
-        icon: "mdi-account-group-outline",
+        icon: "mdi-book-open",
         to: "/summary",
         child: [
           {
@@ -338,7 +331,7 @@ export default {
       },
       {
         title: "ของวิเศษ",
-        icon: "mdi-account-group-outline",
+        icon: "mdi-bell-ring-outline",
         to: "/gadgets",
         child: [
           {
@@ -381,7 +374,7 @@ export default {
       },
       {
         title: "เทคนิคต่างๆ",
-        icon: "mdi-account-group-outline",
+        icon: "mdi-star-face",
         to: "/trick",
         child: [{
             title: "ขุดเหมือง : โหลด และ เซฟ",
