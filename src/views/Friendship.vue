@@ -3,19 +3,19 @@
     <v-container>
       <v-row justify="center">
         <v-col cols="12">
-          <h1>Friendship</h1>
+          <h1>ความสัมพันธ์</h1>
           <v-divider></v-divider>
-          <v-responsive :aspect-ratio="16/9">
-            <v-card-text>Your interactions with villagers, Koropokkur, pet animals, wild animals, and livestock can change their likability points (relationship points / friendship points) towards you. This likability / relationship / friendship points manifest in their likability degree (how many hearts they have when you talk to them).</v-card-text>
+          <v-responsive >
+            <v-card-text>การปฏิสัมพันธ์ของคุณกับ ชาวบ้าน, คนแคระ(ภูติน้อย), สัตวเลี้ยง, สัตว์ป่า, ปศุสัตว์ สามารถเปลี่ยนความชื่นชอบของพวกเขาที่มีต่อคุณได้ ค่าความสัมพันธ์จะแสดงเป็นรูปแบบสีของหัวใจในแต่ละระดับเมื่อเราสนทนากับพวกเขา</v-card-text>
           </v-responsive>
         </v-col>
       </v-row>
       <v-row justify="center">
         <v-col cols="12">
-          <h3>Likability degree</h3>
+          <h3>ระดับความสัมพันธ์</h3>
           <v-divider></v-divider>
-          <v-responsive :aspect-ratio="16/9">
-            <v-card-text>Your interactions with villagers, Koropokkur, pet animals, wild animals, and livestock can change their likability points (relationship points / friendship points) towards you. This likability / relationship / friendship points manifest in their likability degree (how many hearts they have when you talk to them).</v-card-text>
+          <v-responsive>
+            <v-card-text>คนแคระ นับเป็นชาวบ้านนะ! สัตว์ป่า ได้แก่ น้องลิง, น้องกระต่าย, กระรอก, หมี</v-card-text>
           </v-responsive>
         </v-col>
       </v-row>
