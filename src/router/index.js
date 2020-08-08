@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Stamina from "../views/Stamina.vue";
 import Activities from "../views/Activities.vue";
 import Gadgets from "../views/Gadgets.vue";
 import Trick from "../views/Trick.vue";
@@ -10,9 +10,9 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: Home
+    path: "/stamina",
+    name: "Stamina",
+    component: Stamina
   },
   {
     path: "/friendship",
