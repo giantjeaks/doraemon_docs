@@ -43,13 +43,13 @@
         clipped
       >
         <v-list dense>
-          <v-list-item v-for="item in items" :key="item.title" link>
+          <v-list-item v-for="item in items" :key="item.title" link :to="item.to">
             <v-list-item-icon>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-icon>
 
-            <v-list-item-content>
-              <v-list-item-title> <router-link :to="item.to">{{ item.title }} </router-link></v-list-item-title>
+            <v-list-item-content >
+              <v-list-item-title style="font-size:15px; padding: 2px 0 2px 0;"> {{ item.title }} </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -77,11 +77,17 @@ export default {
     //
     drawer: true,
     items: [
-      { title: "Home", icon: "mdi-home-city",to: "/" },
-      { title: "About", icon: "mdi-account",to: "/about" },
-      { title: "Users", icon: "mdi-account-group-outline" },
+      { title: "ข้อมูลพื้นฐาน", icon: "mdi-home-city",to: "/" },
+      { title: "กิจกรรม", icon: "mdi-account",to: "/activities" },
+      { title: "บทสรุป", icon: "mdi-account-group-outline",to:"/summary"},
+      { title: "ของวิเศษ", icon: "mdi-account-group-outline",to:"/gadgets" },
+      { title: "เทคนิคต่างๆ", icon: "mdi-account-group-outline",to:"/trick" },
     ],
     mini: true,
   }),
 };
 </script>
+
+<style scoped>
+ 
+</style>
