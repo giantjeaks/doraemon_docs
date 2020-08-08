@@ -5,6 +5,7 @@ import Activities from "../views/Activities.vue";
 import Gadgets from "../views/Gadgets.vue";
 import Trick from "../views/Trick.vue";
 import Summary from "../views/Summary.vue";
+import Friendship from "../views/Friendship.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -12,6 +13,11 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home
+  },
+  {
+    path: "/friendship",
+    name: "Friendship",
+    component: Friendship
   },
   {
     path: "/activities",
