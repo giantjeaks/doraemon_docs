@@ -23,14 +23,24 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
+      <v-btn
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+        text
+      >
         <span class="mr-2">Latest Release</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
 
     <v-card class="mx-auto overflow-hidden">
-      <v-navigation-drawer v-model="drawer" :mini-variant.sync="mini" permanent app clipped>
+      <v-navigation-drawer
+        v-model="drawer"
+        :mini-variant.sync="mini"
+        permanent
+        app
+        clipped
+      >
         <!-- <v-list dense>
           <v-list-item v-for="item in items" :key="item.title" link :to="item.to">
             <v-list-item-icon>
@@ -52,22 +62,32 @@
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item>
 
-          <v-list-group value="true" v-for="(item,i) in items" :key="i">
+          <v-list-group value="true" v-for="(item, i) in items" :key="i">
             <template v-slot:activator>
-              <v-list-item-title>{{item.title}}</v-list-item-title>
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
             </template>
-            <div v-for="(item2,i2) in item.child" :key="i2">
-              <v-list-group v-if="item2.child.length > 0" no-action sub-group value="true">
+            <div v-for="(item2, i2) in item.child" :key="i2">
+              <v-list-group
+                v-if="item2.child.length > 0"
+                no-action
+                sub-group
+                value="true"
+              >
                 <template v-slot:activator>
                   <v-list-item-content>
-                    <v-list-item-title>{{item2.title}}</v-list-item-title>
+                    <v-list-item-title>{{ item2.title }}</v-list-item-title>
                   </v-list-item-content>
                 </template>
 
-                <v-list-item v-for="(item3, i3) in item2.child" :key="i3" link>
-                  <v-list-item-title v-text="item3.title"></v-list-item-title>
+                <v-list-item
+                  v-for="(item3, i3) in item2.child"
+                  :key="i3"
+                  link
+                  dense
+                >
+                  <v-list-item-title>{{ item3.title }}</v-list-item-title>
                   <v-list-item-icon>
-                    <v-icon v-text="item3.title"></v-icon>
+                    <v-icon></v-icon>
                   </v-list-item-icon>
                 </v-list-item>
               </v-list-group>
@@ -78,7 +98,9 @@
                     <v-icon></v-icon>
                   </v-list-item-icon>
                   <v-list-item-content>
-                    <v-list-item-title v-text="item2.title"></v-list-item-title>
+                    <v-list-item-title style="padding: 5px 0 5px 0;">{{
+                      item2.title
+                    }}</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
               </v-list-item-group>
@@ -120,35 +142,35 @@ export default {
         icon: "mdi-home-city",
         to: "/",
         child: [
-          { title: "Stamina", to: "", child: [], icon: "mdi-home-city" },
-          { title: "Friendship", to: "", child: [], icon: "mdi-home-city" },
-          { title: "Crops", to: "", child: [], icon: "mdi-home-city" },
-          { title: "Animals", to: "", child: [], icon: "mdi-home-city" },
+          { title: "พลังงาน", to: "", child: [], icon: "mdi-home-city" },
+          { title: "มิตรภาพ", to: "", child: [], icon: "mdi-home-city" },
+          { title: "การเก็บเกี่ยว", to: "", child: [], icon: "mdi-home-city" },
+          { title: "สัตว์เลี้ยง", to: "", child: [], icon: "mdi-home-city" },
           {
-            title: "Stores and shopping",
+            title: "ร้านค้า และ การซื้อขาย",
             to: "",
             child: [
               {
-                title: "Anvil - Blacksmith Shop",
+                title: "ร้านช่างตีเหล็ก",
                 to: "",
-                icon: "mdi-home-city"
+                icon: "mdi-home-city",
               },
               {
-                title: "Hammer - Carpenter Shop",
+                title: "ร้านช่างไม้",
                 to: "",
-                icon: "mdi-home-city"
+                icon: "mdi-home-city",
               },
-              { title: "Koropokkur’s Shop", to: "", icon: "mdi-home-city" }
+              { title: "ร้านคนแคระ (ภูติน้อย)", to: "", icon: "mdi-home-city" },
             ],
-            icon: "mdi-home-city"
+            icon: "mdi-home-city",
           },
           {
-            title: "Villagers And Gifts",
+            title: "ชาวบ้านและของขวัญ",
             to: "",
             child: [],
-            icon: "mdi-home-city"
-          }
-        ]
+            icon: "mdi-home-city",
+          },
+        ],
       },
       {
         title: "กิจกรรม",
@@ -156,71 +178,242 @@ export default {
         to: "/activities",
         child: [
           {
-            title: "Cooking",
+            title: "ทำอาหาร",
             to: "",
             icon: "mdi-home-city",
-            child: []
+            child: [],
           },
           {
-            title: "Bug Catching",
+            title: "จับแมลง",
             to: "",
             icon: "mdi-home-city",
-            child: []
+            child: [],
           },
           {
-            title: "Fishing",
+            title: "ตกปลา",
             to: "",
             icon: "mdi-home-city",
-            child: []
+            child: [],
           },
           {
-            title: "Mining",
+            title: "ขุดเหมือง",
             to: "",
             icon: "mdi-home-city",
-            child: []
+            child: [],
           },
           {
-            title: "Foraging",
+            title: "ฟาร์มของป่า",
             to: "",
             icon: "mdi-home-city",
-            child: []
-          }
-        ]
+            child: [],
+          },
+        ],
       },
       {
         title: "บทสรุป",
         icon: "mdi-account-group-outline",
         to: "/summary",
-        child: []
+        child: [
+          {
+            title: "เนื้อเรื่องหลัก",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ช่างไม้",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "คลีนิค",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ร้านค้าตำราอาหาร",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ร้านช่างตีเหล็ก",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ร้านค้าทั่วไป",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ร้านไก่",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ร้านวัวแกะ",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ร้านขายอุปกรณ์",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "นายอำเภอ",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ฮาม่อน",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "คนแคระ(ภูติน้อย)",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "น้องหมา",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "น้องแมว",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "หมี",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ลิง",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "กระต่าย",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "กระรอก",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ของวิเศษ",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
+            title: "ถ้ำ",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },
+        ],
       },
       {
         title: "ของวิเศษ",
         icon: "mdi-account-group-outline",
         to: "/gadgets",
-        child: []
+        child: [
+          {
+            title: "ถุงมือซูเปอร์",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },{
+            title: "ประตูไปที่ไหนก็ได้",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },{
+            title: "ห่วงผ่านตลอด",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },{
+            title: "แมวกวัก",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },{
+            title: "เครื่องพัฒนาเมล็ดพันธุ์",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },{
+            title: "กำไลเรียกภูติ",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },{
+            title: "กระเป๋าวิเศษของโดเรม่อน",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          }
+        ],
       },
       {
         title: "เทคนิคต่างๆ",
         icon: "mdi-account-group-outline",
         to: "/trick",
-        child: []
-      }
+        child: [{
+            title: "ขุดเหมือง : โหลด และ เซฟ",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },{
+            title: "หาเงินฤดูร้อน!",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },{
+            title: "ตกปลาในเหมือง!",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },{
+            title: "วิธีแบ่งของเป็นกองย่อย",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },{
+            title: "หาตังได้ทุกฤดู!",
+            to: "",
+            icon: "mdi-home-city",
+            child: [],
+          },],
+      },
     ],
     mini: true,
-    basics: [
-      ["Management", "people_outline"],
-      ["Settings", "settings"]
-    ],
-
-    cruds: [
-      ["Create", "add"],
-      ["Read", "insert_drive_file"],
-      ["Update", "update"],
-      ["Delete", "delete"]
-    ]
-  })
+  }),
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
