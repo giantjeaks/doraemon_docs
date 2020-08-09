@@ -6,6 +6,8 @@ import Gadgets from "../views/Gadgets.vue";
 import Trick from "../views/Trick.vue";
 import Summary from "../views/Summary.vue";
 import Friendship from "../views/Friendship.vue";
+import Animals from "../views/Animals.vue";
+import Villagers from "../views/Villagers.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -18,6 +20,16 @@ const routes = [
     path: "/friendship",
     name: "Friendship",
     component: Friendship
+  },
+  {
+    path: "/animals",
+    name: "animals",
+    component: Animals
+  },
+  {
+    path: "/villagers",
+    name: "Villagers",
+    component: Villagers
   },
   {
     path: "/activities",
