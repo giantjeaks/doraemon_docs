@@ -138,7 +138,7 @@ export default {
           { title: "พลังงาน", to: "/stamina", child: [], icon: "mdi-home-city" },
           { title: "ความสัมพันธ์", to: "/friendship", child: [], icon: "mdi-home-city" },
           { title: "การเก็บเกี่ยว", to: "", child: [], icon: "mdi-home-city" },
-          { title: "สัตว์เลี้ยง", to: "", child: [], icon: "mdi-home-city" },
+          { title: "สัตว์เลี้ยง", to: "/animals", child: [], icon: "mdi-home-city" },
           {
             title: "ร้านค้า และ การซื้อขาย",
             to: "",
@@ -159,7 +159,7 @@ export default {
           },
           {
             title: "ชาวบ้านและของขวัญ",
-            to: "",
+            to: "/villagers",
             child: [],
             icon: "mdi-home-city",
           },
@@ -172,31 +172,31 @@ export default {
         child: [
           {
             title: "ทำอาหาร",
-            to: "",
+            to: "/cooking",
             icon: "mdi-home-city",
             child: [],
           },
           {
             title: "จับแมลง",
-            to: "",
+            to: "/bug",
             icon: "mdi-home-city",
             child: [],
           },
           {
             title: "ตกปลา",
-            to: "",
+            to: "/fish",
             icon: "mdi-home-city",
             child: [],
           },
           {
             title: "ขุดเหมือง",
-            to: "",
+            to: "/mining",
             icon: "mdi-home-city",
             child: [],
           },
           {
             title: "ฟาร์มของป่า",
-            to: "",
+            to: "/foraging",
             icon: "mdi-home-city",
             child: [],
           },

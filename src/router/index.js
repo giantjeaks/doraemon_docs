@@ -1,13 +1,22 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Stamina from "../views/Stamina.vue";
-import Activities from "../views/Activities.vue";
+
 import Gadgets from "../views/Gadgets.vue";
+
 import Trick from "../views/Trick.vue";
+
 import Summary from "../views/Summary.vue";
-import Friendship from "../views/Friendship.vue";
-import Animals from "../views/Animals.vue";
-import Villagers from "../views/Villagers.vue";
+
+import Stamina from "../views/basics/Stamina.vue";
+import Friendship from "../views/basics/Friendship.vue";
+import Animals from "../views/basics/Animals.vue";
+import Villagers from "../views/basics/Villagers.vue";
+
+import Foraging from "../views/Activities/Foraging.vue";
+import Mining from "../views/Activities/Mining.vue";
+import Cooking from "../views/Activities/Cooking.vue";
+import Bug from "../views/Activities/Bug.vue";
+import Fish from "../views/Activities/Fish.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -32,9 +41,29 @@ const routes = [
     component: Villagers
   },
   {
-    path: "/activities",
-    name: "Activities",
-    component: Activities
+    path: "/foraging",
+    name: "Foraging",
+    component: Foraging
+  },
+  {
+    path: "/mining",
+    name: "Mining",
+    component: Mining
+  },
+  {
+    path: "/cooking",
+    name: "Cooking",
+    component: Cooking
+  },
+  {
+    path: "/bug",
+    name: "Bug",
+    component: Bug
+  },
+  {
+    path: "/fish",
+    name: "Fish",
+    component: Fish
   },
   {
     path: "/gadgets",
