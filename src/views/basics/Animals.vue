@@ -40,13 +40,10 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="12">
-        <v-alert
-          border="right"
-          colored-border
-          type="info"
-          elevation="3"
-        >Once your animals reach stress value 60, they will get sick.
-And once your animals reach stress value 500, they will die.</v-alert>
+        <v-alert border="right" colored-border type="info" elevation="3">
+          Once your animals reach stress value 60, they will get sick.
+          And once your animals reach stress value 500, they will die.
+        </v-alert>
       </v-col>
     </v-row>
     <v-row justify="center">
@@ -60,14 +57,14 @@ And once your animals reach stress value 500, they will die.</v-alert>
       </v-col>
     </v-row>
     <v-row justify="center">
-        <v-col cols="12">
-          <v-responsive>
-            <v-card-text>Affection and stress from grazing is calculated every 60 minutes on minutes 00, 10, 20, 30, 40, and 50. The time at the start of that 60 minutes determines the affection and stress modifier.</v-card-text>
-          </v-responsive>
-        </v-col>
-      </v-row>
+      <v-col cols="12">
+        <v-responsive>
+          <v-card-text>Affection and stress from grazing is calculated every 60 minutes on minutes 00, 10, 20, 30, 40, and 50. The time at the start of that 60 minutes determines the affection and stress modifier.</v-card-text>
+        </v-responsive>
+      </v-col>
+    </v-row>
 
-          <v-row justify="center">
+    <v-row justify="center">
       <v-col cols="8">
         <v-simple-table dark>
           <template v-slot:default>
@@ -112,7 +109,9 @@ export default {
   data() {
     return {
       Animals: [{ Action: "1", Affection: "2", Stress: "3", Animals: "4" }],
-      Weather: [{Weather:"1",Grazing :"2",Affection:"3",Stress:"4",Animal:"5"}]
+      Weather: [
+        { Weather: "1", Grazing: "2", Affection: "3", Stress: "4", Animal: "5" }
+      ]
     };
   }
 };
