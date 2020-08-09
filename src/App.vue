@@ -138,7 +138,7 @@ export default {
           { title: "พลังงาน", to: "/stamina", child: [], icon: "mdi-home-city" },
           { title: "ความสัมพันธ์", to: "/friendship", child: [], icon: "mdi-home-city" },
           { title: "การเก็บเกี่ยว", to: "", child: [], icon: "mdi-home-city" },
-          { title: "สัตว์เลี้ยง", to: "", child: [], icon: "mdi-home-city" },
+          { title: "สัตว์เลี้ยง", to: "/animals", child: [], icon: "mdi-home-city" },
           {
             title: "ร้านค้า และ การซื้อขาย",
             to: "",
@@ -159,7 +159,7 @@ export default {
           },
           {
             title: "ชาวบ้านและของขวัญ",
-            to: "",
+            to: "/villagers",
             child: [],
             icon: "mdi-home-city",
           },

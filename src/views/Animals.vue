@@ -2,7 +2,7 @@
   <div class="Animals">
     <v-row justify="center">
       <v-col cols="12">
-        <h1>Animals</h1>
+        <h1>สัตว์เลี้ยง</h1>
         <v-divider></v-divider>
       </v-col>
     </v-row>
@@ -13,16 +13,16 @@
             <thead>
               <tr>
                 <th class="text-left">
-                  <h3>Action</h3>
+                  <h3>การกระทำ</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Affection</h3>
+                  <h3>ความรัก</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Stress</h3>
+                  <h3>ความเครียด</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Animals</h3>
+                  <h3>สัตว์เลี้ยง</h3>
                 </th>
               </tr>
             </thead>
@@ -45,8 +45,7 @@
           colored-border
           type="info"
           elevation="3"
-        >Once your animals reach stress value 60, they will get sick.
-And once your animals reach stress value 500, they will die.</v-alert>
+        >ถ้าสัตว์ที่เลี้ยงไว้มีความเครียดถึง 60 หน่วยจะป่วยนะ และถ้าปล่อยให้เครียดจน 500 ก็จะตาย!</v-alert>
       </v-col>
     </v-row>
     <v-row justify="center">
@@ -56,13 +55,13 @@ And once your animals reach stress value 500, they will die.</v-alert>
           colored-border
           type="info"
           elevation="3"
-        >Disaster grazing means grazing animals during extreme bad weather like typhoon.</v-alert>
+        >น้อง สามารถป่วยได้ด้วยนะถ้าปล่อยให้แทะเล็มหญ้านอกบ้าน (เลี้ยงนอกบ้าน) ตอนมีพายุเข้า!</v-alert>
       </v-col>
     </v-row>
     <v-row justify="center">
         <v-col cols="12">
           <v-responsive>
-            <v-card-text>Affection and stress from grazing is calculated every 60 minutes on minutes 00, 10, 20, 30, 40, and 50. The time at the start of that 60 minutes determines the affection and stress modifier.</v-card-text>
+            <v-card-text><span>ความรักและความเครียดจากการปล่อยน้องกินหญ้าจะคำนวณทุกๆ 60 นาทีในนาทีที่ 00, 10, 20, 30, 40 และ 50 เวลาที่เริ่มต้น 60 นาทีนั้นจะเป็นตัวกำหนดตัวปรับความรักและความเครียดของน้อง</span></v-card-text>
           </v-responsive>
         </v-col>
       </v-row>
@@ -74,19 +73,19 @@ And once your animals reach stress value 500, they will die.</v-alert>
             <thead>
               <tr>
                 <th class="text-left">
-                  <h3>Weather</h3>
+                  <h3>สภาพอากาศ</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Grazing Hour</h3>
+                  <h3>เวลาที่ปล่อยไว้ข้างนอก</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Affection</h3>
+                  <h3>ความรัก</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Stress</h3>
+                  <h3>ความดเครียด</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Animal</h3>
+                  <h3>สัตว์เลี้ยง</h3>
                 </th>
               </tr>
             </thead>
@@ -111,8 +110,33 @@ export default {
   name: "Animals",
   data() {
     return {
-      Animals: [{ Action: "1", Affection: "2", Stress: "3", Animals: "4" }],
-      Weather: [{Weather:"1",Grazing :"2",Affection:"3",Stress:"4",Animal:"5"}]
+      Animals: [{ Action: "พูดคุย", Affection: "2", Stress: "-12", Animals: "ไก่ กุ๊กๆ" },
+      { Action: "พูดคุย", Affection: "4", Stress: "0", Animals: "น้องแมว" },
+      { Action: "พูดคุย", Affection: "2", Stress: "-4", Animals: "สัตว์อื่นๆ ยกเว้น ไก่ และ แมว" },
+      { Action: "แปรงขน", Affection: "2", Stress: "-4", Animals: "วัว แกะ ม้า" },
+      { Action: "เก็บเกี่ยวผลผลิตจากน้อง", Affection: "2", Stress: "-4", Animals: "ทุกตัว (ที่เก็บได้นะ)" },
+      { Action: "ให้อาหาร", Affection: "2", Stress: "-4", Animals: "ทุกตัว" },
+      { Action: "ให้ขนม", Affection: "1", Stress: "-4", Animals: "ทุกตัวยกเว้น แมว" },
+      { Action: "ให้ขนม", Affection: "4", Stress: "0", Animals: "น้องแมว" },
+      { Action: "งดอาหาร", Affection: "-5", Stress: "50", Animals: "ทุกตัว" },
+      { Action: "งดคุย", Affection: "-1", Stress: "4", Animals: "ทุกตัวยกเว้น แมว" },
+      { Action: "งดคุย", Affection: "-1", Stress: "0", Animals: "น้องแมว" },
+      { Action: "ไม่เก็บผลผลิตจากน้อง", Affection: "0", Stress: "50", Animals: "ทุกตัว" },
+      { Action: "ให้ยา", Affection: "-1", Stress: "50", Animals: "ทุกตัว" },
+      { Action: "ไข้จากพายุ", Affection: "-20", Stress: "20", Animals: "ทุกตัว" },
+      { Action: "ป่วย", Affection: "0", Stress: "1", Animals: "ทุกตัว" }],
+      Weather: [{Weather:"มีแดด",Grazing :"06:00-19:00",Affection:"1",Stress:"-1",Animal:"ม้า วัว แกะ ไก่"},
+      {Weather:"",Grazing :"19:00-00:00",Affection:"0",Stress:"0",Animal:""},
+      {Weather:"",Grazing :"00:00-06:00",Affection:"-2",Stress:"2",Animal:""},
+      {Weather:"ฝนตก",Grazing :"06:00-19:00",Affection:"-1",Stress:"0",Animal:"ม้า วัว แกะ ไก่่"},
+      {Weather:"",Grazing :"19:00-00:00",Affection:"-1",Stress:"0",Animal:""},
+      {Weather:"",Grazing :"00:00-06:00",Affection:"-3",Stress:"3",Animal:""},
+      {Weather:"มีแดด",Grazing :"06:00-19:00",Affection:"1",Stress:"-1",Animal:"หมา แมว"},
+      {Weather:"",Grazing :"19:00-00:00",Affection:"0",Stress:"0",Animal:""},
+      {Weather:"",Grazing :"00:00-06:00",Affection:"0",Stress:"1",Animal:""},
+      {Weather:"ฝนตก",Grazing :"06:00-19:00",Affection:"0",Stress:"1",Animal:"หมา แมว"},
+      {Weather:"",Grazing :"19:00-00:00",Affection:"0",Stress:"1",Animal:""},
+      {Weather:"",Grazing :"00:00-06:00",Affection:"0",Stress:"1",Animal:""},]
     };
   }
 };
