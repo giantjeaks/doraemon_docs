@@ -17,6 +17,7 @@ import Mining from "../views/Activities/Mining.vue";
 import Cooking from "../views/Activities/Cooking.vue";
 import Bug from "../views/Activities/Bug.vue";
 import Fish from "../views/Activities/Fish.vue";
+import Blacksmith from "../views/basics/shop/Blacksmith.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -34,6 +35,11 @@ const routes = [
     path: "/animals",
     name: "animals",
     component: Animals
+  },
+  {
+    path: "/blacksmith",
+    name: "Blacksmith",
+    component: Blacksmith
   },
   {
     path: "/villagers",
