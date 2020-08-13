@@ -77,6 +77,7 @@
                   :key="i3"
                   link
                   dense
+                  :to="item3.to"
                 >
                   <v-list-item-title>{{ item3.title }}</v-list-item-title>
                   <v-list-item-icon>
@@ -137,7 +138,7 @@ export default {
         child: [
           { title: "พลังงาน", to: "/stamina", child: [], icon: "mdi-home-city" },
           { title: "ความสัมพันธ์", to: "/friendship", child: [], icon: "mdi-home-city" },
-          { title: "การเก็บเกี่ยว", to: "", child: [], icon: "mdi-home-city" },
+          { title: "การเก็บเกี่ยว", to: "/crops", child: [], icon: "mdi-home-city" },
           { title: "สัตว์เลี้ยง", to: "/animals", child: [], icon: "mdi-home-city" },
           {
             title: "ร้านค้า และ การซื้อขาย",
@@ -145,15 +146,15 @@ export default {
             child: [
               {
                 title: "ร้านช่างตีเหล็ก",
-                to: "",
+                to: "/blacksmith",
                 icon: "mdi-home-city",
               },
               {
                 title: "ร้านช่างไม้",
-                to: "",
+                to: "/carpenter",
                 icon: "mdi-home-city",
               },
-              { title: "ร้านคนแคระ (ภูติน้อย)", to: "", icon: "mdi-home-city" },
+              { title: "ร้านคนแคระ (ภูติน้อย)", to: "/koropokkur", icon: "mdi-home-city" },
             ],
             icon: "mdi-home-city",
           },
