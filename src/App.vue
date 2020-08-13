@@ -144,6 +144,7 @@ export default {
             title: "ร้านค้า และ การซื้อขาย",
             to: "",
             child: [
+              { title: "ร้านค้า", to: "/stores", icon: "mdi-home-city" },
               {
                 title: "ร้านช่างตีเหล็ก",
                 to: "/blacksmith",
@@ -154,7 +155,7 @@ export default {
                 to: "/carpenter",
                 icon: "mdi-home-city",
               },
-              { title: "ร้านคนแคระ (ภูติน้อย)", to: "/koropokkur", icon: "mdi-home-city" },
+              { title: "ร้านคนแคระ (ภูติน้อย)", to: "/koropokkur", icon: "mdi-home-city" }
             ],
             icon: "mdi-home-city",
           },
@@ -337,37 +338,37 @@ export default {
         child: [
           {
             title: "ถุงมือซูเปอร์",
-            to: "",
+            to: "/superGloves",
             icon: "mdi-home-city",
             child: [],
           },{
             title: "ประตูไปที่ไหนก็ได้",
-            to: "",
+            to: "/anywhereDoor",
             icon: "mdi-home-city",
             child: [],
           },{
             title: "ห่วงผ่านตลอด",
-            to: "",
+            to: "/passLoop",
             icon: "mdi-home-city",
             child: [],
           },{
             title: "แมวกวัก",
-            to: "",
+            to: "/comeHereCat",
             icon: "mdi-home-city",
             child: [],
           },{
             title: "เครื่องพัฒนาเมล็ดพันธุ์",
-            to: "",
+            to: "/inventionInventor",
             icon: "mdi-home-city",
             child: [],
           },{
             title: "กำไลเรียกภูติ",
-            to: "",
+            to: "/spriteSummoner",
             icon: "mdi-home-city",
             child: [],
           },{
             title: "กระเป๋าวิเศษของโดเรม่อน",
-            to: "",
+            to: "/whateverWeatherBox",
             icon: "mdi-home-city",
             child: [],
           }
