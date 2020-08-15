@@ -2,20 +2,24 @@
   <div class="Foraging">
     <v-row justify="center">
       <v-col cols="12">
-        <h1>Woods and forages</h1>
+        <h1>ท่อนซุงและการฟาร์มของป่า</h1>
         <v-divider></v-divider>
       </v-col>
     </v-row>
     <v-row justify="center">
       <v-col cols="12">
-        <h2>Woods</h2>
+        <h2>ท่อนซุง</h2>
         <v-divider></v-divider>
       </v-col>
     </v-row>
     <v-row justify="center">
       <v-col cols="12">
         <v-responsive>
-          <v-card-text>You can get four woods for each tree. Three from chopping the tree and one from chopping the stump.</v-card-text>
+          <v-card-text>
+            <span>
+              เราสามารถหาท่อนซุงจากต้นไม้ได้ 4 ท่อน/ต้นนะ โดยสามท่อนจะมาจากการตัดต้นไม้ และ อีก 1 ท่อนจะมาจากการตัดตอไม้
+            </span>
+          </v-card-text>
         </v-responsive>
       </v-col>
     </v-row>
@@ -67,7 +71,7 @@
 
     <v-row justify="center">
       <v-col cols="12">
-        <h2>Forages</h2>
+        <h2>ฟาร์มของป่า</h2>
         <v-divider></v-divider>
       </v-col>
     </v-row>
@@ -79,19 +83,19 @@
             <thead>
               <tr>
                 <th class="text-left">
-                  <h3>Location</h3>
+                  <h3>สถานที่</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Spring</h3>
+                  <h3>ฤดูใบไม้ผลิ</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Summer</h3>
+                  <h3>ฤดูร้อน</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Autumn</h3>
+                  <h3>ฤดูใบไม้ร่วง</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Winter</h3>
+                  <h3>ฤดูหนาว</h3>
                 </th>
               </tr>
             </thead>
