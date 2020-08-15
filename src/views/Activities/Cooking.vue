@@ -2,14 +2,14 @@
   <div class="Cooking">
     <v-row justify="center">
       <v-col cols="12">
-        <h1>Cooking Recipes</h1>
+        <h1>ตำราอาหาร</h1>
         <v-divider></v-divider>
       </v-col>
     </v-row>
     <v-row justify="center">
       <v-col cols="12">
         <v-responsive>
-          <v-card-text>Below are cooking recipes, their ingredients, cooking tools, and selling prices.</v-card-text>
+          <v-card-text><span>รายการข้างล่างนี้เป็นตำราทำอาหารนะ จะประกอบไปด้วยเครื่องมือที่ใช้ทำ ส่วนผสม และราคาขาย</span></v-card-text>
         </v-responsive>
       </v-col>
     </v-row>
@@ -30,10 +30,10 @@
               <thead>
                 <tr>
                   <th class="text-left">
-                    <h3>Recipe</h3>
+                    <h3>อาหาร</h3>
                   </th>
                   <th class="text-left">
-                    <h3>Ingredients</h3>
+                    <h3>ส่วนผสม</h3>
                   </th>
                   <th class="text-left">
                     <h3>0.5 ★</h3>
@@ -106,11 +106,11 @@ export default {
   data() {
     return {
       tables: [
-        ["Stew", "Stew Set","https://i.imgur.com/YX0nOCB.png"],
-        ["Whisk", "Whisk","https://i.imgur.com/mQxODft.png"],
-        ["Oven", "Oven","https://i.imgur.com/UaODini.png"],
-        ["Cotton", "Cotton Swab","https://i.imgur.com/sTbnGEp.png"],
-        ["Frypan", "Frypan","https://i.imgur.com/CQ0GUAD.png"]
+        ["Stew", "ชุดสตูว์","https://i.imgur.com/YX0nOCB.png"],
+        ["Whisk", "เครื่องตีไข่","https://i.imgur.com/mQxODft.png"],
+        ["Oven", "เตาอบ","https://i.imgur.com/UaODini.png"],
+        ["Cotton", "ไม้นวดแป้ง","https://i.imgur.com/sTbnGEp.png"],
+        ["Frypan", "กระทะ","https://i.imgur.com/CQ0GUAD.png"]
       ],
       datas: [
         {

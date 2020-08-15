@@ -2,25 +2,30 @@
   <div class="Mining">
     <v-row justify="center">
       <v-col cols="12">
-        <h1>Mine and mining</h1>
+        <h1>เหมืองและการขุดเหมือง</h1>
         <v-divider></v-divider>
       </v-col>
     </v-row>
     <v-row justify="center">
       <v-col cols="12">
-        <h3>How to get pickaxe</h3>
+        <h3>ทำยังไงให้ได้พลั่ว (Pickaxe)</h3>
       </v-col>
     </v-row>
     <v-row justify="center">
       <v-col cols="12">
         <v-responsive>
-          <v-card-text>Go to the mining cave (located at Mine Entrance in the map), you will get a scene where Doraemon, Smitty, and Blake are talking inside. Next, talk to Blake to get your pickaxe and make sure you have an empty slot in your bag.</v-card-text>
+          <v-card-text>
+            <span>
+              ไปที่ถ้ำขุดเหมือง (ตั้งอยู่ทางเข้าถ้ำในแผนที่เลย) เราจะถูกตัดเข้าคัตซีนที่มีโดราเอมอน สมิธตี้ และเบลคคุยกันอยู่ข้างใน
+              จากนั้นไปคุยกับเบลคแล้วเราจะได้พลั่วของเรามา ! เคลียร์ช่องในกระเป๋าก่อนคุยด้วยนะ !
+            </span>
+            </v-card-text>
         </v-responsive>
       </v-col>
     </v-row>
     <v-row justify="center">
       <v-col cols="12">
-        <h2>List of possible items</h2>
+        <h2>รายการที่สามารถเจอในถ้ำขุดเหมือง</h2>
       </v-col>
     </v-row>
     <v-row justify="center">
@@ -30,16 +35,16 @@
             <thead>
               <tr>
                 <th class="text-left">
-                  <h3>Item</h3>
+                  <h3>ไอเทม</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Starting Floor</h3>
+                  <h3>เริ่มจากชั้น</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Selling Price</h3>
+                  <h3>ราคาขาย</h3>
                 </th>
                 <th class="text-left">
-                  <h3>Notes</h3>
+                  <h3>หมายเหตุ</h3>
                 </th>
               </tr>
             </thead>
