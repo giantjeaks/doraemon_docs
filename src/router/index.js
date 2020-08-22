@@ -25,9 +25,121 @@ import Stores from "../views/basics/shop/Stores.vue";
 import Blacksmith from "../views/basics/shop/Blacksmith.vue";
 import Carpenter from "../views/basics/shop/Carpenter.vue";
 import Koropokkur from "../views/basics/shop/Koropokkur.vue";
+
+import Story from "../views/Walkthrough/Story.vue";
+import BigTree from "../views/Walkthrough/BigTree.vue";
+import Carpenter2 from "../views/Walkthrough/Carpenter.vue";
+import Clinic from "../views/Walkthrough/Clinic.vue";
+import RecipeShop from "../views/Walkthrough/RecipeShop.vue";
+import Blacksmith2 from "../views/Walkthrough/Blacksmith.vue";
+import GeneralStore from "../views/Walkthrough/GeneralStore.vue";
+import ChickenShop from "../views/Walkthrough/ChickenShop.vue";
+import CattleShop from "../views/Walkthrough/CattleShop.vue";
+import TackleShop from "../views/Walkthrough/TackleShop.vue";
+import Mayor from "../views/Walkthrough/Mayor.vue";
+import Harmon from "../views/Walkthrough/Harmon.vue";
+import Koropokkur2 from "../views/Walkthrough/Koropokkur.vue";
+import Dog from "../views/Walkthrough/Dog.vue";
+import Horse from "../views/Walkthrough/Horse.vue";
+import Cat from "../views/Walkthrough/Cat.vue";
+import Bear from "../views/Walkthrough/Bear.vue";
+import Monkey from "../views/Walkthrough/Monkey.vue";
+import Rabbit from "../views/Walkthrough/Rabbit.vue";
+import Squirrel from "../views/Walkthrough/Squirrel.vue";
+import Gadgets from "../views/Walkthrough/Gadgets.vue";
+import Cave from "../views/Walkthrough/Cave.vue";
+
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: "/story",
+    name: "Story",
+    component: Story},
+{
+    path: "/bigTree",
+    name: "BigTree",
+    component: BigTree},
+{
+    path: "/carpenter2",
+    name: "Carpenter2",
+    component: Carpenter2},
+{
+    path: "/clinic",
+    name: "Clinic",
+    component: Clinic},
+{
+    path: "/recipeShop",
+    name: "RecipeShop",
+    component: RecipeShop},
+{
+    path: "/blacksmith2",
+    name: "Blacksmith2",
+    component: Blacksmith2},
+{
+    path: "/generalStore",
+    name: "GeneralStore",
+    component: GeneralStore},
+{
+    path: "/chickenShop",
+    name: "ChickenShop",
+    component: ChickenShop},
+{
+    path: "/cattleShop",
+    name: "CattleShop",
+    component: CattleShop},
+{
+    path: "/tackleShop",
+    name: "TackleShop",
+    component: TackleShop},
+{
+    path: "/mayor",
+    name: "Mayor",
+    component: Mayor},
+{
+    path: "/harmon",
+    name: "Harmon",
+    component: Harmon},
+{
+    path: "/koropokkur2",
+    name: "Koropokkur2",
+    component: Koropokkur2},
+{
+    path: "/dog",
+    name: "Dog",
+    component: Dog},
+{
+    path: "/horse",
+    name: "Horse",
+    component: Horse},
+{
+    path: "/cat",
+    name: "Cat",
+    component: Cat},
+{
+    path: "/bear",
+    name: "Bear",
+    component: Bear},
+{
+    path: "/monkey",
+    name: "Monkey",
+    component: Monkey},
+{
+    path: "/rabbit",
+    name: "Rabbit",
+    component: Rabbit},
+{
+    path: "/squirrel",
+    name: "Squirrel",
+    component: Squirrel},
+{
+    path: "/gadgets",
+    name: "Gadgets",
+    component: Gadgets},
+{
+    path: "/cave",
+    name: "Cave",
+    component: Cave},
   {
     path: "/stamina",
     name: "Stamina",
