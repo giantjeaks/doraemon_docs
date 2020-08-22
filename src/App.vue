@@ -210,6 +210,12 @@ export default {
         to: "/story",
         child: [
           {
+            title: "เนื้อเรื่อง",
+            to: "/story",
+            icon: "mdi-home-city",
+            child: [],
+          },
+          {
             title: "เนื้อเรื่องหลัก",
             to: "/bigTree",
             icon: "mdi-home-city",
