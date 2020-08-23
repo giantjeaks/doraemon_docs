@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
+import comment from "../views/comment.vue";
+
 import SuperGloves from "../views/SecretGadgets/SuperGloves.vue";
 import AnywhereDoor from "../views/SecretGadgets/AnywhereDoor.vue";
 import PassLoop from "../views/SecretGadgets/PassLoop.vue";
@@ -53,93 +55,120 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/comment",
+    name: "comment",
+    component: comment
+  },
+  {
     path: "/story",
     name: "Story",
-    component: Story},
-{
+    component: Story
+  },
+  {
     path: "/bigTree",
     name: "BigTree",
-    component: BigTree},
-{
+    component: BigTree
+  },
+  {
     path: "/carpenter2",
     name: "Carpenter2",
-    component: Carpenter2},
-{
+    component: Carpenter2
+  },
+  {
     path: "/clinic",
     name: "Clinic",
-    component: Clinic},
-{
+    component: Clinic
+  },
+  {
     path: "/recipeShop",
     name: "RecipeShop",
-    component: RecipeShop},
-{
+    component: RecipeShop
+  },
+  {
     path: "/blacksmith2",
     name: "Blacksmith2",
-    component: Blacksmith2},
-{
+    component: Blacksmith2
+  },
+  {
     path: "/generalStore",
     name: "GeneralStore",
-    component: GeneralStore},
-{
+    component: GeneralStore
+  },
+  {
     path: "/chickenShop",
     name: "ChickenShop",
-    component: ChickenShop},
-{
+    component: ChickenShop
+  },
+  {
     path: "/cattleShop",
     name: "CattleShop",
-    component: CattleShop},
-{
+    component: CattleShop
+  },
+  {
     path: "/tackleShop",
     name: "TackleShop",
-    component: TackleShop},
-{
+    component: TackleShop
+  },
+  {
     path: "/mayor",
     name: "Mayor",
-    component: Mayor},
-{
+    component: Mayor
+  },
+  {
     path: "/harmon",
     name: "Harmon",
-    component: Harmon},
-{
+    component: Harmon
+  },
+  {
     path: "/koropokkur2",
     name: "Koropokkur2",
-    component: Koropokkur2},
-{
+    component: Koropokkur2
+  },
+  {
     path: "/dog",
     name: "Dog",
-    component: Dog},
-{
+    component: Dog
+  },
+  {
     path: "/horse",
     name: "Horse",
-    component: Horse},
-{
+    component: Horse
+  },
+  {
     path: "/cat",
     name: "Cat",
-    component: Cat},
-{
+    component: Cat
+  },
+  {
     path: "/bear",
     name: "Bear",
-    component: Bear},
-{
+    component: Bear
+  },
+  {
     path: "/monkey",
     name: "Monkey",
-    component: Monkey},
-{
+    component: Monkey
+  },
+  {
     path: "/rabbit",
     name: "Rabbit",
-    component: Rabbit},
-{
+    component: Rabbit
+  },
+  {
     path: "/squirrel",
     name: "Squirrel",
-    component: Squirrel},
-{
+    component: Squirrel
+  },
+  {
     path: "/gadgets",
     name: "Gadgets",
-    component: Gadgets},
-{
+    component: Gadgets
+  },
+  {
     path: "/cave",
     name: "Cave",
-    component: Cave},
+    component: Cave
+  },
   {
     path: "/stamina",
     name: "Stamina",
@@ -169,7 +198,8 @@ const routes = [
     path: "/carpenter",
     name: "Carpenter",
     component: Carpenter
-  },{
+  },
+  {
     path: "/koropokkur",
     name: "Koropokkur",
     component: Koropokkur
@@ -178,7 +208,8 @@ const routes = [
     path: "/villagers",
     name: "Villagers",
     component: Villagers
-  },{
+  },
+  {
     path: "/crops",
     name: "Crops",
     component: Crops
@@ -213,27 +244,33 @@ const routes = [
     path: "/superGloves",
     name: "SuperGloves",
     component: SuperGloves
-  },{
+  },
+  {
     path: "/anywhereDoor",
     name: "AnywhereDoor",
     component: AnywhereDoor
-  },{
+  },
+  {
     path: "/passLoop",
     name: "PassLoop",
     component: PassLoop
-  },{
+  },
+  {
     path: "/comeHereCat",
     name: "ComeHereCat",
     component: ComeHereCat
-  },{
+  },
+  {
     path: "/inventionInventor",
     name: "InventionInventor",
     component: InventionInventor
-  },{
+  },
+  {
     path: "/spriteSummoner",
     name: "SpriteSummoner",
     component: SpriteSummoner
-  },{
+  },
+  {
     path: "/whateverWeatherBox",
     name: "WhateverWeatherBox",
     component: WhateverWeatherBox
