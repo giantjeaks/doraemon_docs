@@ -113,8 +113,8 @@ export default {
   data() {
     return {
       tables: [
-        ["Stew", "ชุดสตูว์", "https://i.imgur.com/YX0nOCB.png"],
-        ["Whisk", "เครื่องตีไข่", "https://i.imgur.com/mQxODft.png"],
+        ["Stew", "ชุดหม้อไฟ", "https://i.imgur.com/YX0nOCB.png"],
+        ["Whisk", "ตะกร้อตีฟอง", "https://i.imgur.com/mQxODft.png"],
         ["Oven", "เตาอบ", "https://i.imgur.com/UaODini.png"],
         ["Cotton", "ไม้นวดแป้ง", "https://i.imgur.com/sTbnGEp.png"],
         ["Frypan", "กระทะ", "https://i.imgur.com/CQ0GUAD.png"],
@@ -168,7 +168,7 @@ export default {
             },
             {
               img: "https://i.imgur.com/nj4NQLb.png",
-              Recipe: "สตูว์",
+              Recipe: "หม้อไฟ",
               Ingredients: ["มันฝรั่ง", "ดอกกะหล่ำ", "ฟักทอง", "นม"],
               S05: "",
               S1: "",
@@ -329,7 +329,7 @@ export default {
             },
             {
               img: "https://i.imgur.com/aionNgR.png",
-              Recipe: "สตูว์ มังค์ฟิช",
+              Recipe: "มังค์ฟิชหม้อไฟ",
               Ingredients: [
                 "หัวไชเท้า",
                 "ผักกาดขาว",
@@ -412,7 +412,7 @@ export default {
             },
             {
               img: "https://i.imgur.com/bnDNXnA.png",
-              Recipe: "สตูว์ปลาโดะโจ",
+              Recipe: "ปลาโดะโจหม้อไฟ",
               Ingredients: ["ผลโลควอต", "ปลาโดะโจ", "โกโบ้", "หังหอม", "ไข่"],
               S05: "",
               S1: "",
@@ -427,7 +427,7 @@ export default {
             },
             {
               img: "https://i.imgur.com/zX1FuoG.png",
-              Recipe: "สตูว์เต่า",
+              Recipe: "เต่าหม้อไฟ",
               Ingredients: ["เต่า", "เห็ดชิตาเกะ(เล็ก)", "เห็ดชิตาเกะ"],
               S05: "",
               S1: "",
@@ -1133,7 +1133,7 @@ export default {
             },
             {
               img: "https://i.imgur.com/1IDIPSE.png",
-              Recipe: "ปลาลิ้นหมาทอด",
+              Recipe: "ปลาราดซอสรูเมียร์",
               Ingredients: ["มะกอก", "ปลาลิ้นหมา", "แป้ง", "เนย"],
               S05: "",
               S1: "",
@@ -1163,8 +1163,8 @@ export default {
             },
             {
               img: "https://i.imgur.com/CrKbkyC.png",
-              Recipe: "ทราฟเฟิลไข่",
-              Ingredients: ["เห็ดทราฟเฟิล", "ไข่"],
+              Recipe: "ทรัฟเฟิลไข่",
+              Ingredients: ["ทรัฟเฟิล", "ไข่"],
               S05: "",
               S1: "",
               S15: "",
@@ -1473,7 +1473,7 @@ export default {
             },
             {
               img: "https://i.imgur.com/sCVBAcP.png",
-              Recipe: "เทศกาลปลาออร์",
+              Recipe: "เทศกาลปลาออร์ฟิซ",
               Ingredients: ["ปลาออร์ยักษ์", "เนย","มอยองเนส","เครื่องเทศ"],
               S05: "",
               S1: "",
