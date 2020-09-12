@@ -51,12 +51,12 @@
               </v-row>
               <br />
 
-              <v-alert border="right" colored-border type="info" elevation="3">
+              <v-alert text dense outlined color="blue">
                 ถ้าโนบิตะมีพลังงานเต็มเปี่ยม (สูงสุด 150 หน่วย
                 โดยการซื้อยาจากคุณหมอ Regis) โนบิตะจะฟื้นฟูพลังงาน 135 หน่วย
                 ด้วยการนอนระหว่าง 21:00-00:00
               </v-alert>
-              <v-alert border="right" colored-border type="info" elevation="3">
+              <v-alert text dense outlined color="blue">
                 ถ้าโนบิตะได้กินเครื่องดื่มชูกำลัง (Vigorage) ราคา 1.200 G
                 ที่ซื้อจากคลีนิคโนบิตะจะตื่นตอน 06:00 และฟื้นฟูพลังงาน 60 หน่วย
               </v-alert>
@@ -121,10 +121,7 @@
               <v-row><v-col cols="12">
                 <v-alert
                 
-                  border="right"
-                  colored-border
-                  type="info"
-                  elevation="3"
+                  text dense outlined color="blue"
                 >
                   เราสามารถซื้อวนไปจนถึงขีดสูงสุดที่ 150 หน่วยนะ! แต่ราคาก็จะสูงขึ้นตามจำนวนครั้งที่ซื้อ
                 </v-alert>
